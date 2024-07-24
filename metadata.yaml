@@ -1,5 +1,7 @@
 homepage: "https://www.iadvize.com"
 documentation: "https://help.iadvize.com/hc/en-gb/articles/360024974592"
 versions:
+  - sha: d0fb831191b861dc6abe7701950e39f6d79dc92d
+    changeNote: Improve decimal amount handling (can handle decimal and point separator)
   - sha: 3e2ff04e99a7470722a4c8782c41b24fac52cc3f
     changeNotes: Initial release.
