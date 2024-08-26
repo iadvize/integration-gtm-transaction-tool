@@ -52,9 +52,11 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 const setInWindow = require('setInWindow');
 const copyFromWindow = require('copyFromWindow');
 const makeNumber = require('makeNumber');
+const makeString = require('makeString');
+const getType = require('getType');
 
 function getAmountNumber(value) {
-  return makeNumber(value.replace(',', '.')) || value;
+  return getType(value) === "number" ? value : makeNumber(makeString(value).replace(',', '.'));
 }
 
 if (data.id && data.amount) {
@@ -154,6 +156,6 @@ setup: ''
 
 ___NOTES___
 
-Created on 24/07/2024 11:02:34
+Created on 26/08/2024 21:16:57
 
 
