@@ -1,9 +1,14 @@
 homepage: "https://www.iadvize.com"
-documentation: "https://help.iadvize.com/hc/en-gb/articles/360024974592"
+documentation: "https://help.iadvize.com/hc/en-gb/articles/29227516062610"
 versions:
+  - sha: 96fdf71a7a0ad0b1872b8b3436c858dcab7a7552
+    changeNotes: >
+      Add support for the new detailed sales report: purchased products
+      from the transaction can now be sent. See template update guide:
+      https://help.iadvize.com/hc/en-gb/articles/35196644744850
   - sha: 561171395ecb177792b54ef86690c2ae423ec904
-    changeNote: Improve and fix amount type conversion (string to number)
+    changeNotes: Improve and fix amount type conversion (string to number)
   - sha: d0fb831191b861dc6abe7701950e39f6d79dc92d
-    changeNote: Improve decimal amount handling (can handle decimal and point separator)
+    changeNotes: Improve decimal amount handling (can handle decimal and point separator)
   - sha: 3e2ff04e99a7470722a4c8782c41b24fac52cc3f
     changeNotes: Initial release.
