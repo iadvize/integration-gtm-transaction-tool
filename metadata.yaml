@@ -1,6 +1,12 @@
 homepage: "https://www.iadvize.com"
 documentation: "https://help.iadvize.com/hc/en-gb/articles/29227516062610"
 versions:
+  - sha: 556667c792da5b62e4c0929531125a33b59152fe
+    changeNotes: >
+      Add support for the new detailed sales report: purchased products
+      from the transaction can now be sent. See template update guide:
+      https://help.iadvize.com/hc/en-gb/articles/35196644744850
+      Fix variables names & set real default values for tag migration
   - sha: b9e23b1c11bdede03320ffbf2968f5894a3addd3
     changeNotes: >
       Add support for the new detailed sales report: purchased products
