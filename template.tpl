@@ -53,7 +53,8 @@ ___TEMPLATE_PARAMETERS___
         "name": "products",
         "displayName": "Transaction items",
         "simpleValueType": true,
-        "help": "⚠️ Must follow the GA4 items array format (array of objects). ℹ️ Each object must contain at least the following properties: 𝗶𝘁𝗲𝗺_𝗶𝗱, 𝗾𝘂𝗮𝗻𝘁𝗶𝘁𝘆 and 𝗽𝗿𝗶𝗰𝗲. Property names are case-sensitive and must be spelled exactly as shown."
+        "help": "⚠️ Must follow the GA4 items array format (array of objects). ℹ️ Each object must contain at least the following properties: 𝗶𝘁𝗲𝗺_𝗶𝗱, 𝗾𝘂𝗮𝗻𝘁𝗶𝘁𝘆 and 𝗽𝗿𝗶𝗰𝗲. Property names are case-sensitive and must be spelled exactly as shown.",
+        "defaultValue": ""
       },
       {
         "type": "CHECKBOX",
@@ -75,7 +76,8 @@ ___TEMPLATE_PARAMETERS___
                 "simpleValueType": true,
                 "valueHint": "item_id",
                 "help": "Leave empty to use default: 𝗶𝘁𝗲𝗺_𝗶𝗱",
-                "enablingConditions": []
+                "enablingConditions": [],
+                "defaultValue": ""
               },
               {
                 "type": "TEXT",
@@ -83,7 +85,8 @@ ___TEMPLATE_PARAMETERS___
                 "displayName": "Item price property name",
                 "simpleValueType": true,
                 "valueHint": "quantity",
-                "help": "Leave empty to use default: 𝗾𝘂𝗮𝗻𝘁𝗶𝘁𝘆"
+                "help": "Leave empty to use default: 𝗾𝘂𝗮𝗻𝘁𝗶𝘁𝘆",
+                "defaultValue": ""
               },
               {
                 "type": "TEXT",
@@ -91,7 +94,8 @@ ___TEMPLATE_PARAMETERS___
                 "displayName": "Item quantity property name",
                 "simpleValueType": true,
                 "valueHint": "price",
-                "help": "Leave empty to use default: 𝗽𝗿𝗶𝗰𝗲"
+                "help": "Leave empty to use default: 𝗽𝗿𝗶𝗰𝗲",
+                "defaultValue": ""
               }
             ],
             "enablingConditions": [
@@ -103,7 +107,8 @@ ___TEMPLATE_PARAMETERS___
             ],
             "help": "Only fill in the properties whose names differ from the defaults  (item_id, price, quantity). Leave others empty."
           }
-        ]
+        ],
+        "defaultValue": ""
       }
     ],
     "groupStyle": "NO_ZIPPY",
@@ -292,6 +297,6 @@ setup: ''
 
 ___NOTES___
 
-Created on 06/05/2026 11:37:13
+Created on 06/05/2026 14:19:34
 
 
