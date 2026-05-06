@@ -70,7 +70,7 @@ ___TEMPLATE_PARAMETERS___
             "subParams": [
               {
                 "type": "TEXT",
-                "name": "ItemIDPropertyName",
+                "name": "itemIDPropertyName",
                 "displayName": "Item ID property name",
                 "simpleValueType": true,
                 "valueHint": "item_id",
@@ -79,7 +79,7 @@ ___TEMPLATE_PARAMETERS___
               },
               {
                 "type": "TEXT",
-                "name": "QuantityPropertyName",
+                "name": "quantityPropertyName",
                 "displayName": "Item price property name",
                 "simpleValueType": true,
                 "valueHint": "quantity",
@@ -87,7 +87,7 @@ ___TEMPLATE_PARAMETERS___
               },
               {
                 "type": "TEXT",
-                "name": "PricePropertyName",
+                "name": "pricePropertyName",
                 "displayName": "Item quantity property name",
                 "simpleValueType": true,
                 "valueHint": "price",
@@ -170,7 +170,7 @@ if (data.id && data.amount) {
   const products = getProducts(
     data.products,
     {
-      "itemIdPropName": (data.customizePropertyNames && data.ItemIDPropertyName) || PROPERTY_NAMES.ITEM_ID.GTM_DEFAULT,
+      "itemIdPropName": (data.customizePropertyNames && data.itemIDPropertyName) || PROPERTY_NAMES.ITEM_ID.GTM_DEFAULT,
       "quantityPropName": (data.customizePropertyNames && data.quantityPropertyName) || PROPERTY_NAMES.QUANTITY.GTM_DEFAULT,
       "pricePropName": (data.customizePropertyNames && data.pricePropertyName) || PROPERTY_NAMES.PRICE.GTM_DEFAULT
     }
@@ -292,6 +292,6 @@ setup: ''
 
 ___NOTES___
 
-Created on 05/05/2026 11:45:43
+Created on 06/05/2026 11:37:13
 
 
