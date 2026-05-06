@@ -108,7 +108,7 @@ ___TEMPLATE_PARAMETERS___
             "help": "Only fill in the properties whose names differ from the defaults  (item_id, price, quantity). Leave others empty."
           }
         ],
-        "defaultValue": ""
+        "defaultValue": false
       }
     ],
     "groupStyle": "NO_ZIPPY",
@@ -124,7 +124,6 @@ const copyFromWindow = require('copyFromWindow');
 const makeNumber = require('makeNumber');
 const makeString = require('makeString');
 const getType = require('getType');
-const log = require('logToConsole');
 
 const PROPERTY_NAMES = {
   ITEM_ID: {
@@ -133,11 +132,11 @@ const PROPERTY_NAMES = {
   },
   QUANTITY: {
     WEBSDK: "quantity",
-    GTM_DEFAULT: "quantity",
+    GTM_DEFAULT: "quantity"
   },
   PRICE: {
     WEBSDK: "price",
-    GTM_DEFAULT: "price",
+    GTM_DEFAULT: "price"
   }
 };
 
@@ -184,8 +183,6 @@ if (data.id && data.amount) {
   if (products) {
     transaction.products = products;
   }
-  
-  log("Transaction", transaction);
   
   iAdvizeInterface.push(function(iAdvize) {
     iAdvize.recordTransaction(transaction);
@@ -264,27 +261,6 @@ ___WEB_PERMISSIONS___
       "isEditedByUser": true
     },
     "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "logging",
-        "versionId": "1"
-      },
-      "param": [
-        {
-          "key": "environments",
-          "value": {
-            "type": 1,
-            "string": "debug"
-          }
-        }
-      ]
-    },
-    "clientAnnotations": {
-      "isEditedByUser": true
-    },
-    "isRequired": true
   }
 ]
 
@@ -297,6 +273,6 @@ setup: ''
 
 ___NOTES___
 
-Created on 06/05/2026 14:19:34
+Created on 06/05/2026 15:28:21
 
 
