@@ -1,6 +1,11 @@
 homepage: "https://www.iadvize.com"
 documentation: "https://help.iadvize.com/hc/en-gb/articles/29227516062610"
 versions:
+  - sha: 7fd175e9b264bbf495936ab5d330f382aece4d71
+    changeNotes: >
+      Add support for the new detailed sales report: purchased products
+      from the transaction can now be sent. See template update guide:
+      https://help.iadvize.com/hc/en-gb/articles/35196644744850
   - sha: 556667c792da5b62e4c0929531125a33b59152fe
     changeNotes: >
       Add support for the new detailed sales report: purchased products
